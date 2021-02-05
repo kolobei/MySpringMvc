@@ -11,9 +11,18 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Product</title>
+        <style>
+            table {
+                border: 3px appworkspace solid;
+                border-collapse: collapse;
+            }
+        </style>
     </head>
     <body>
         <h1>This is my list of Products</h1>
+        <p>
+            ${message}
+        </p>
         <div>
             <h3>Products</h3>
             <table>
@@ -22,6 +31,8 @@
                         <th>Pcode</th>
                         <th>Pdescr</th>
                         <th>Pprice</th>
+                        <th></th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -30,6 +41,12 @@
                             <td>${product.pcode}</td>
                             <td>${product.pdescr}</td>
                             <td>${product.pprice}</td>
+                            <td>
+                                <a href="${pageContext.request.contextPath}/product/update/${product.pcode}">Edit</a>
+                            </td>
+                            <td>
+                                <a href="${pageContext.request.contextPath}/product/delete?id=${product.pcode}">Delete</a>
+                            </td>
                         </tr>
                     </p:forEach>
                 </tbody>

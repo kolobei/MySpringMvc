@@ -6,26 +6,33 @@
 package emergon.service;
 
 import emergon.entity.Customer;
-import java.util.ArrayList;
+import emergon.repository.CustomerRepo;
 import java.util.List;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  *
  * @author gkolo
  */
+@Transactional
 @Service
 public class CustomerService {
 
+    @Autowired
+    CustomerRepo customerRepo;
+    
     private List<Customer> customers;
 
     public List<Customer> getCustomers() {
-        if (customers == null) {
-            customers = new ArrayList();
-            customers.add(new Customer(1, "Giorgos"));
-            customers.add(new Customer(2, "Jenny"));
-            customers.add(new Customer(3, "Alisia"));
-        }
+        List<Customer> customers = customerRepo.findAll();
+//        if (customers == null) {
+//            customers = new ArrayList();
+//            customers.add(new Customer(1, "Giorgos"));
+//            customers.add(new Customer(2, "Jenny"));
+//            customers.add(new Customer(3, "Alisia"));
+//        }
         return customers;
     }
 
@@ -33,25 +40,15 @@ public class CustomerService {
 //        return customers;
 //    }
     public void addCustomer(Customer customer) {
-        customers.add(customer);
+        customerRepo.save(customer);
     }
 
     public void deleteCustomer(int id) {
-        for (Customer c : customers) {
-            if (c.getCcode().equals(id)) {
-                customers.remove(c);
-                break;
-            }
-        }
+        customerRepo.delete(Customer.class, id);
     }
 
     public Customer getCustomerById(int ccode) {
-        for(Customer c : customers){
-            if(c.getCcode() == ccode){
-                return c;
-            }
-        }
-        return null;
+        return customerRepo.find(ccode);
     }
 
     public Customer updateCustomer(Customer customer) { // customer argument contains a new data from the form

@@ -8,6 +8,9 @@ package emergon.controller;
 import emergon.entity.Customer;
 import emergon.service.CustomerService;
 import java.util.List;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -30,6 +33,7 @@ public class CustomerController {
     
     @Autowired
     private CustomerService customerService;
+    
     
     @RequestMapping
     public ModelAndView showCustomers(ModelAndView modelAndView){
@@ -73,7 +77,6 @@ public class CustomerController {
         String minima = "Customer updated succesfully";
         attributes.addFlashAttribute("message", minima);
         return "redirect:/customer";
-    
     }
     
 }

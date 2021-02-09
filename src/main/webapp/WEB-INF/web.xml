@@ -9,11 +9,11 @@
         <servlet-name>dispatcher</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
         <init-param>
-            <!--Where is the configuration for this DispatcherServlet-->
+            Where is the configuration for this DispatcherServlet
             <param-name>contextConfigLocation</param-name>
             <param-value>/WEB-INF/dispatcher-servlet.xml</param-value>
         </init-param>
-        <!--I want this servlet to start 1st--> 
+        I want this servlet to start 1st 
         <load-on-startup>1</load-on-startup>
     </servlet>
     <servlet-mapping>

@@ -25,7 +25,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableTransactionManagement // Inform spring container to take into account annotations about @Transactional
 public class DatabaseConfig {
 
-    //datasource
+    // datasource
     public DataSource getDatasource() {
         DriverManagerDataSource datasource = new DriverManagerDataSource();
         datasource.setDriverClassName("com.mysql.cj.jdbc.Driver");
@@ -35,7 +35,7 @@ public class DatabaseConfig {
         return datasource;
     }
 
-    //hibernate properties
+    // hibernate properties
     private Properties getHibernateProperties() {
 
         Properties properties = new Properties();
@@ -60,7 +60,7 @@ public class DatabaseConfig {
         return sessionFactory;
     }
     
-    //method to take care of transactions
+    // method to take care of transactions
     @Bean // Make HibernateTransactionManager a bean in order to go into Spring Manager
     @Autowired // inkjet SessionFactory into that method
     public HibernateTransactionManager transactionManager(SessionFactory sf){

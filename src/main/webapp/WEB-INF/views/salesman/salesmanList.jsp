@@ -47,7 +47,7 @@
                                 <a href="${pageContext.request.contextPath}/salesman/delete?id=${salesman.scode}">Delete</a>
                             </td>
                             <td>
-                                <a href="${pageContext.request.contextPath}/family/">Family</a>
+                                <a href="${pageContext.request.contextPath}/family/">Show Family</a>
                             </td>
                         </tr>
                     </c:forEach>

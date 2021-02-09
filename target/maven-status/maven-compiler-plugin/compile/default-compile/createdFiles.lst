@@ -1,10 +1,11 @@
 emergon\service\ProductService.class
-<<<<<<< HEAD
 emergon\service\SalesmanService.class
 emergon\controller\ProductController.class
 emergon\config\DatabaseConfig.class
 emergon\controller\HomeController.class
 emergon\repository\SalesmanRepo.class
+emergon\config\DispacherServletInitializer.class
+emergon\config\MyDispatcherServletConfiguration.class
 emergon\service\CustomerService.class
 emergon\repository\CrudRepo.class
 emergon\controller\SalesmanController.class
@@ -13,22 +14,8 @@ emergon\entity\Family.class
 emergon\entity\Product.class
 emergon\entity\Salesman.class
 emergon\repository\HibernateUtil.class
-=======
-emergon\controller\ProductController.class
-emergon\config\DatabaseConfig.class
-emergon\controller\HomeController.class
-emergon\config\DispacherServletInitializer.class
-emergon\config\MyDispatcherServletConfiguration.class
-emergon\service\CustomerService.class
-emergon\entity\Family.class
-emergon\entity\Product.class
-emergon\entity\Salesman.class
->>>>>>> myStick
 emergon\entity\Sales.class
 emergon\entity\Customer.class
 emergon\service\HomeService.class
 emergon\controller\CustomerController.class
-<<<<<<< HEAD
 emergon\repository\CustomerRepo.class
-=======
->>>>>>> myStick

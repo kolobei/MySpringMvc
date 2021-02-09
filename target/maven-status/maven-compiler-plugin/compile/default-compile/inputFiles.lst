@@ -1,34 +1,21 @@
 C:\Users\gkolo\Documents\NetBeansProjects\MySpringMVCApp\src\main\java\emergon\controller\ProductController.java
 C:\Users\gkolo\Documents\NetBeansProjects\MySpringMVCApp\src\main\java\emergon\entity\Sales.java
-<<<<<<< HEAD
+C:\Users\gkolo\Documents\NetBeansProjects\MySpringMVCApp\src\main\java\emergon\config\DispacherServletInitializer.java
 C:\Users\gkolo\Documents\NetBeansProjects\MySpringMVCApp\src\main\java\emergon\entity\Salesman.java
 C:\Users\gkolo\Documents\NetBeansProjects\MySpringMVCApp\src\main\java\emergon\entity\Family.java
 C:\Users\gkolo\Documents\NetBeansProjects\MySpringMVCApp\src\main\java\emergon\controller\SalesmanController.java
 C:\Users\gkolo\Documents\NetBeansProjects\MySpringMVCApp\src\main\java\emergon\repository\SalesmanRepo.java
-=======
-C:\Users\gkolo\Documents\NetBeansProjects\MySpringMVCApp\src\main\java\emergon\config\DispacherServletInitializer.java
-C:\Users\gkolo\Documents\NetBeansProjects\MySpringMVCApp\src\main\java\emergon\entity\Salesman.java
-C:\Users\gkolo\Documents\NetBeansProjects\MySpringMVCApp\src\main\java\emergon\entity\Family.java
 C:\Users\gkolo\Documents\NetBeansProjects\MySpringMVCApp\src\main\java\emergon\config\MyDispatcherServletConfiguration.java
->>>>>>> myStick
 C:\Users\gkolo\Documents\NetBeansProjects\MySpringMVCApp\src\main\java\emergon\service\HomeService.java
 C:\Users\gkolo\Documents\NetBeansProjects\MySpringMVCApp\src\main\java\emergon\repository\CustomerRepo.java
 C:\Users\gkolo\Documents\NetBeansProjects\MySpringMVCApp\src\main\java\emergon\config\DatabaseConfig.java
-<<<<<<< HEAD
 C:\Users\gkolo\Documents\NetBeansProjects\MySpringMVCApp\src\main\java\emergon\service\SalesmanService.java
-=======
->>>>>>> myStick
 C:\Users\gkolo\Documents\NetBeansProjects\MySpringMVCApp\src\main\java\emergon\controller\CustomerController.java
 C:\Users\gkolo\Documents\NetBeansProjects\MySpringMVCApp\src\main\java\emergon\entity\Product.java
 C:\Users\gkolo\Documents\NetBeansProjects\MySpringMVCApp\src\main\java\emergon\service\ProductService.java
 C:\Users\gkolo\Documents\NetBeansProjects\MySpringMVCApp\src\main\java\emergon\entity\Customer.java
-<<<<<<< HEAD
 C:\Users\gkolo\Documents\NetBeansProjects\MySpringMVCApp\src\main\java\emergon\repository\HibernateUtil.java
 C:\Users\gkolo\Documents\NetBeansProjects\MySpringMVCApp\src\main\java\emergon\repository\ProductRepo.java
 C:\Users\gkolo\Documents\NetBeansProjects\MySpringMVCApp\src\main\java\emergon\service\CustomerService.java
 C:\Users\gkolo\Documents\NetBeansProjects\MySpringMVCApp\src\main\java\emergon\controller\HomeController.java
 C:\Users\gkolo\Documents\NetBeansProjects\MySpringMVCApp\src\main\java\emergon\repository\CrudRepo.java
-=======
-C:\Users\gkolo\Documents\NetBeansProjects\MySpringMVCApp\src\main\java\emergon\service\CustomerService.java
-C:\Users\gkolo\Documents\NetBeansProjects\MySpringMVCApp\src\main\java\emergon\controller\HomeController.java
->>>>>>> myStick

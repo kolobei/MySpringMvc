@@ -50,12 +50,16 @@ public class CustomerService {
     public Customer getCustomerById(int ccode) {
         return customerRepo.find(ccode);
     }
-
-    public Customer updateCustomer(Customer customer) { // customer argument contains a new data from the form
-        // Find customer from list and add it to the variable customerToUpdate
-        Customer customerToUpdate = getCustomerById(customer.getCcode());
-        customerToUpdate.setCname(customer.getCname());
-        return customerToUpdate;
+    
+    public Customer updateCustomer(Customer customer) {//customer argument contains the new data from the form
+        return customerRepo.save(customer);
     }
+
+//    public Customer updateCustomer(Customer customer) { // customer argument contains a new data from the form
+//        // Find customer from list and add it to the variable customerToUpdate
+//        Customer customerToUpdate = getCustomerById(customer.getCcode());
+//        customerToUpdate.setCname(customer.getCname());
+//        return customerToUpdate;
+//    }
 
 }

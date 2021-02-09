@@ -6,17 +6,14 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "p" %>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <spring:url value="/resources/css/style.css" var="styleCSS" />
+        <link href="${styleCSS}" rel="stylesheet" type="text/css" />
         <title>Product</title>
-        <style>
-            table {
-                border: 3px appworkspace solid;
-                border-collapse: collapse;
-            }
-        </style>
     </head>
     <body>
         <h1>This is my list of Products</h1>

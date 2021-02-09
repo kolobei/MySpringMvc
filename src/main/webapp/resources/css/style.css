@@ -1,0 +1,26 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 6, 2021, 7:46:42 PM
+    Author     : gkolo
+*/
+
+h1 {
+    color: red;
+}
+
+table{
+    border: 3px solid blue;
+}
+
+table th,td {
+    border: 1px groove blue;
+    cellspacing: 5px;
+    margin: 0;  
+    
+}
+
+

@@ -18,17 +18,29 @@ public class FamilyRepo extends HibernateUtil<Family> implements CrudRepo<Family
 
     @Override
     public void delete(int id) {
+<<<<<<< HEAD
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+=======
+        
+>>>>>>> master
     }
 
     @Override
     public Family findById(int id) {
+<<<<<<< HEAD
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+=======
+        return null;
+>>>>>>> master
     }
 
     @Override
     public List<Family> findAll() {
+<<<<<<< HEAD
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+=======
+        return null;
+>>>>>>> master
     }
     
     @Override

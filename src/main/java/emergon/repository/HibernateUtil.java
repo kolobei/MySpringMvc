@@ -61,4 +61,11 @@ public class HibernateUtil<E> {
         E e = session.find(type, id);
         session.remove(e); 
     }
+    
+    protected List<E> findByFk(String query){
+        getSession();
+        Query myQuery = session.createNamedQuery(query);
+        List<E> list = myQuery.getResultList();
+        return list;
+    }
 }

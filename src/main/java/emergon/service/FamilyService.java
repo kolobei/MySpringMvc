@@ -23,5 +23,24 @@ public class FamilyService {
     @Autowired
     FamilyRepo familyRepo;
     
+    public List<Family> getFamily() {
+        List<Family> family = familyRepo.findAll();
+        return family;
+    }
+
+    public Family saveFamily(Family salesman) {
+        return familyRepo.save(salesman);
+    }
+
+    public void deleteFamily(int id) {
+        familyRepo.delete(Family.class, id);
+    }
+
+    public Family getFamilyById(int id) {
+        return familyRepo.findById(id);
+    }
     
+    public List<Family> getFamilyBySalesman(int fid){
+        return familyRepo.findByFk(fid);
+    }
 }

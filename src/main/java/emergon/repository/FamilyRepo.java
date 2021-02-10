@@ -16,6 +16,13 @@ import org.springframework.stereotype.Repository;
 @Repository
 public class FamilyRepo extends HibernateUtil<Family> implements CrudRepo<Family> {
 
+
+    
+    @Override
+    public Family save(Family f) {
+        return null;
+    }
+
     @Override
     public void delete(int id) {
         
@@ -30,12 +37,10 @@ public class FamilyRepo extends HibernateUtil<Family> implements CrudRepo<Family
     public List<Family> findAll() {
         return null;
     }
-    
-    @Override
-    public Family save(Family f) {
-        return null;
-    }
 
-     
+    public List<Family> findByFk(int fid) {
+        return super.findByFk("Family.findBySalesman", fid); 
+    }
     
+
 }

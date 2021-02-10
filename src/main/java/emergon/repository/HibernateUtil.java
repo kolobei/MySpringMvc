@@ -62,9 +62,10 @@ public class HibernateUtil<E> {
         session.remove(e); 
     }
     
-    protected List<E> findByFk(String query){
+    protected List<E> findByFk(String query, int fid){
         getSession();
         Query myQuery = session.createNamedQuery(query);
+        myQuery.setParameter("scode", fid);
         List<E> list = myQuery.getResultList();
         return list;
     }

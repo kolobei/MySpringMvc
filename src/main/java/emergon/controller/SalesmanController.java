@@ -85,7 +85,7 @@ public class SalesmanController {
     @GetMapping("/update/{scode}")
     public String showFormUpdate(@PathVariable(name = "scode") int scode, Model model){
         Salesman salesman = salesmanService.getSalesmanById(scode);
-        model.addAttribute("salesmanToEdit", salesman);
+        model.addAttribute("poliths", salesman);
         return "salesman/salesmanForm";
     }
     
